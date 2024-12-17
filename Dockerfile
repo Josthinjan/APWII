@@ -1,9 +1,6 @@
 # Usa una imagen base con PHP 8 y Nginx
 FROM richarvey/nginx-php-fpm:latest
 
-# Instalar dependencias del sistema (por si es necesario)
-RUN apt-get update && apt-get install -y libpng-dev libjpeg-dev libfreetype6-dev zip git
-
 # Copiar los archivos de tu aplicación al contenedor
 COPY . /var/www/html
 
